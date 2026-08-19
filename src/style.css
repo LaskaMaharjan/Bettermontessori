@@ -1,0 +1,220 @@
+/* =========================================
+   1. DESIGN TOKENS (change colors/fonts here)
+   ========================================= */
+:root {
+  --color-sky: #4fc3e8;
+  --color-sky-dark: #2faeda;
+  --color-sky-light: #eaf8fd;
+  --color-ink: #1b2733;
+  --color-sun: #ffc93c;
+  --color-petal: #f786b0;
+  --color-cream: #fbfbf9;
+  --color-white: #ffffff;
+
+  --font-display: "Baloo 2", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, sans-serif;
+
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-full: 999px;
+
+  --max-width: 1100px;
+}
+
+/* =========================================
+   2. RESET / BASE
+   ========================================= */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-cream);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: rgba(27, 39, 51, 0.6);
+  margin-top: 10px;
+}
+
+.accent {
+  color: var(--color-sky-dark);
+}
+
+/* =========================================
+   3. BUTTONS
+   ========================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--color-sky);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  padding: 12px 28px;
+}
+
+.btn-primary:hover {
+  background: var(--color-sky-dark);
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(79, 195, 232, 0.35);
+}
+
+.btn-outline {
+  border: 2px solid var(--color-ink);
+  border-radius: var(--radius-full);
+  padding: 10px 26px;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.btn-full {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-full);
+}
+
+/* =========================================
+   4. NAVBAR
+   ========================================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(251, 251, 249, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(27, 39, 51, 0.06);
+}
+
+.navbar-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px; /* change these two numbers to adjust navbar padding */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(27, 39, 51, 0.8);
+}
+
+.nav-links a:hover {
+  color: var(--color-sky-dark);
+}
+
+.nav-login {
+  display: inline-flex;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--color-ink);
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 24px 20px;
+  border-top: 1px solid rgba(27, 39, 51, 0.06);
+}
+
+.mobile-menu a {
+  font-weight: 700;
+}
