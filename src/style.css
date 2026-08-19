@@ -218,3 +218,63 @@ img {
 .mobile-menu a {
   font-weight: 700;
 }
+/* =========================================
+   5. HERO
+   ========================================= */
+.hero {
+  padding: 64px 24px 80px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-emoji {
+  font-size: 56px;
+}
+
+.hero-title-row h1 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-badge {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-8deg);
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(247, 134, 176, 0.15);
+  color: var(--color-petal);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.hero-subtext {
+  display: block;
+  margin-top: 24px;
+  font-size: 18px;
+  color: rgba(27, 39, 51, 0.7);
+}
+
+.hero-inner .btn {
+  margin-top: 32px;
+}
