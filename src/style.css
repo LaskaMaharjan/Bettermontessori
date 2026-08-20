@@ -424,3 +424,50 @@ img {
   font-size: 14px;
   line-height: 1.6;
 }
+/* =========================================
+   8. WHY CHOOSE US
+   ========================================= */
+.why-choose {
+  padding: 80px 24px;
+}
+
+.reasons-grid {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.reason {
+  display: flex;
+  gap: 16px;
+  width: 300px;
+}
+
+.reason-number {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-sky-light);
+  color: var(--color-sky-dark);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reason h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.reason p {
+  font-size: 14px;
+  color: rgba(27, 39, 51, 0.6);
+  line-height: 1.6;
+}
