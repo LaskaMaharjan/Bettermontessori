@@ -4,7 +4,6 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-inner">
         <div className="hero-title-row">
-          <span className="hero-emoji">🧒</span>
           <h1>
             Watch Your Little One
             <br />
@@ -13,7 +12,6 @@ export default function Hero() {
               Grow &amp; Shine!
             </span>
           </h1>
-          <span className="hero-emoji">☀️</span>
         </div>
 
         <p className="hero-subtext">
