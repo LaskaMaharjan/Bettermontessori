@@ -3,6 +3,7 @@ import Hero from './Components/Hero.jsx'
 import Features from './Components/Features.jsx'
 import About from './Components/About.jsx'
 import WhyChoose from './Components/WhyChoose.jsx'
+import Testimonials from './Components/Testimonials.jsx'
 
 export default function App() {
   return (
@@ -10,8 +11,9 @@ export default function App() {
       <Navbar />
       <Hero />
       <Features />
-      <About/>
-      <WhyChoose/>
+      <About />
+      <WhyChoose />
+      <Testimonials />
     </>
   )
 }
